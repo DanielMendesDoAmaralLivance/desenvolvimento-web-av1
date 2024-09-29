@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/14e5f2677e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de estacionamento</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header class="menu">
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html"
+              ><img src="./assets/images/logo-64px.png" title="Logo"
+            /></a>
+          </li>
+          <li><a href="./index.html">Veículos</a></li>
+          <li><a href="./inserir-um-veiculo.html">Inserir um veículo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="veiculos-section">
+        <h1 class="titulo">Veículos</h1>
+        <table id="veiculos-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Placa do veículo</th>
+              <th>Nome do proprietário</th>
+              <th>Número do apartamento</th>
+              <th>Bloco do apartamento</th>
+              <th>Modelo do veículo</th>
+              <th>Cor do veículo</th>
+              <th>Número da vaga de estacionamento</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section class="vagas-section">
+        <h1 class="titulo">Vagas</h1>
+
+        <aside class="legenda-vagas">
+          <p>
+            Cada quadrado abaixo representa uma vaga de estacionamento e seu
+            respectivo número. Vagas
+            <span class="indisponivel">indisponíveis</span> são destacadas em
+            <span class="indisponivel">vermelho</span>, enquanto as vagas
+            <span class="disponivel">disponíveis</span> aparecem em
+            <span class="disponivel">verde</span>.
+          </p>
+        </aside>
+
+        <div class="vagas-section-container" id="vagas-section-container"></div>
+      </section>
+    </main>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
